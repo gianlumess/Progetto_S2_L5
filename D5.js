@@ -74,7 +74,7 @@ const cars = [
 ];
 
 for (let index = 0; index < cars.length; index++) {
-  cars[index].licensePlate = "SIUM123";
+  cars[index].licensePlate = "ac888mn";
 }
 console.log(cars);
 /* ESERCIZIO 6
@@ -90,7 +90,7 @@ cars.push({
   model: "500",
   color: "white",
   trims: ["pop", "abarth", "lounge"],
-  licensePlate: "SIUM123",
+  licensePlate: "ac888mn",
 });
 console.log("Aggiunto nuovo oggetto in ultima posizione dell'array", cars); //NON CAPISCO PERCHE' IN QUESTO CONSOLELOG CHE VIENE PRIMA DEL COMANDO POP NON VENGONO VISUALIZZATI GLI ULTIMI ELEMMENTI DEL TRIM
 
