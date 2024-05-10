@@ -48,6 +48,10 @@ console.log(pets);
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
+console.log(
+  "---------------------------ESERCIZIO 5---------------------------"
+);
+
 const cars = [
   {
     brand: "Ford",
@@ -69,15 +73,48 @@ const cars = [
   },
 ];
 
+for (let index = 0; index < cars.length; index++) {
+  cars[index].licensePlate = "SIUM123";
+}
+console.log(cars);
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+console.log(
+  "---------------------------ESERCIZIO 6---------------------------"
+);
 
+cars.push({
+  brand: "Fiat",
+  model: "500",
+  color: "white",
+  trims: ["pop", "abarth", "lounge"],
+  licensePlate: "SIUM123",
+});
+console.log("Aggiunto nuovo oggetto in ultima posizione dell'array", cars); //NON CAPISCO PERCHE' IN QUESTO CONSOLELOG CHE VIENE PRIMA DEL COMANDO POP NON VENGONO VISUALIZZATI GLI ULTIMI ELEMMENTI DEL TRIM
+
+for (let index = 0; index < cars.length; index++) {
+  cars[index].trims.pop();
+}
+console.log(
+  "eliminato l'ultimo elemento della proprietà 'trims' da ogni auto.",
+  cars
+);
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
+console.log(
+  "---------------------------ESERCIZIO 7---------------------------"
+);
+
 const justTrims = [];
+
+for (let index = 0; index < cars.length; index++) {
+  const firstTrim = cars[index].trims.shift();
+  justTrims.push(firstTrim);
+}
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
