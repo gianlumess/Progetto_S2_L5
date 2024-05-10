@@ -6,6 +6,7 @@ body {
   background-color: #e9edee;
   font-size: 1.2rem;
   line-height: 1.65em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -18,16 +19,19 @@ h4 {
 main {
   padding: 2em;
 }
-
-#image_logo_container {
-  text-align: left;
+.top_bottom_logo {
   background-color: #222f3f;
+  background-repeat: no-repeat;
+}
+#image_logo_container_top {
+  text-align: left;
   padding-left: 2em;
   padding-top: 0.5em;
 }
 
-#logo_image {
+#logo_image_top {
   width: 8em;
+  text-align: left;
 }
 
 .top_bottom_link {
@@ -37,7 +41,13 @@ main {
 #top_link {
   text-align: left;
 }
+#top_link a {
+  text-decoration: none;
+}
 
+.white_link {
+  color: white;
+}
 .link_navbar {
   display: inline;
   padding-left: 1em;
@@ -76,6 +86,8 @@ h1 {
 
 .link_to_shop {
   margin-left: 1em;
+  color: #0e5f6a;
+  text-decoration: none;
 }
 
 .card {
@@ -113,4 +125,12 @@ h1 {
 
 .banner {
   margin-bottom: 2em;
+}
+
+#back_to_top {
+  padding: 0.5em;
+}
+#logo_image_bottom {
+  width: 13em;
+  margin: 2em;
 }
