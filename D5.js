@@ -157,3 +157,28 @@ console.log(
 );
 
 const charactersArray = ["g", "n", "u", "z", "d"];
+const numbersArray = [];
+
+for (let index = 0; index < charactersArray.length; index++) {
+  switch (index) {
+    case 0:
+      numbersArray.push(7);
+      break;
+    case 1:
+      numbersArray.push(14);
+      break;
+    case 2:
+      numbersArray.push(21);
+      break;
+    case 3:
+      numbersArray.push(26);
+      break;
+    case 4:
+      numbersArray.push(4);
+      break;
+    default:
+      break;
+  }
+}
+console.log(charactersArray);
+console.log(numbersArray);
